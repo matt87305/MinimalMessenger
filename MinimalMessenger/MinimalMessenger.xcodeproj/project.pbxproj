@@ -22,6 +22,7 @@
 		D8871A091915697400583605 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88719E81915697400583605 /* UIKit.framework */; };
 		D8871A111915697400583605 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8871A0F1915697400583605 /* InfoPlist.strings */; };
 		D8871A131915697400583605 /* MinimalMessengerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8871A121915697400583605 /* MinimalMessengerTests.m */; };
+		D8871A1E19156A3A00583605 /* MGRCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8871A1D19156A3A00583605 /* MGRCoreData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		D8871A0E1915697400583605 /* MinimalMessengerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MinimalMessengerTests-Info.plist"; sourceTree = "<group>"; };
 		D8871A101915697400583605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8871A121915697400583605 /* MinimalMessengerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinimalMessengerTests.m; sourceTree = "<group>"; };
+		D8871A1C19156A3A00583605 /* MGRCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRCoreData.h; sourceTree = "<group>"; };
+		D8871A1D19156A3A00583605 /* MGRCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRCoreData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		D88719D81915697400583605 = {
 			isa = PBXGroup;
 			children = (
+				D8871A1C19156A3A00583605 /* MGRCoreData.h */,
+				D8871A1D19156A3A00583605 /* MGRCoreData.m */,
 				D88719EA1915697400583605 /* MinimalMessenger */,
 				D8871A0C1915697400583605 /* MinimalMessengerTests */,
 				D88719E31915697400583605 /* Frameworks */,
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D88719FE1915697400583605 /* MGRViewController.m in Sources */,
+				D8871A1E19156A3A00583605 /* MGRCoreData.m in Sources */,
 				D88719F11915697400583605 /* main.m in Sources */,
 				D88719F51915697400583605 /* MGRAppDelegate.m in Sources */,
 			);
