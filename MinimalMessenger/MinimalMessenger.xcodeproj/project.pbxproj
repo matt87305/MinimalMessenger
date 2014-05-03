@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D88719E51915697400583605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88719E41915697400583605 /* Foundation.framework */; };
+		D88719E71915697400583605 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88719E61915697400583605 /* CoreGraphics.framework */; };
+		D88719E91915697400583605 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88719E81915697400583605 /* UIKit.framework */; };
+		D88719EF1915697400583605 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D88719ED1915697400583605 /* InfoPlist.strings */; };
+		D88719F11915697400583605 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D88719F01915697400583605 /* main.m */; };
+		D88719F51915697400583605 /* MGRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88719F41915697400583605 /* MGRAppDelegate.m */; };
+		D88719F81915697400583605 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88719F61915697400583605 /* Main_iPhone.storyboard */; };
+		D88719FB1915697400583605 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88719F91915697400583605 /* Main_iPad.storyboard */; };
+		D88719FE1915697400583605 /* MGRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88719FD1915697400583605 /* MGRViewController.m */; };
+		D8871A001915697400583605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88719FF1915697400583605 /* Images.xcassets */; };
+		D8871A071915697400583605 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8871A061915697400583605 /* XCTest.framework */; };
+		D8871A081915697400583605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88719E41915697400583605 /* Foundation.framework */; };
+		D8871A091915697400583605 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88719E81915697400583605 /* UIKit.framework */; };
+		D8871A111915697400583605 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8871A0F1915697400583605 /* InfoPlist.strings */; };
+		D8871A131915697400583605 /* MinimalMessengerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8871A121915697400583605 /* MinimalMessengerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8871A0A1915697400583605 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D88719D91915697400583605 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D88719E01915697400583605;
+			remoteInfo = MinimalMessenger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D88719E11915697400583605 /* MinimalMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinimalMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88719E41915697400583605 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D88719E61915697400583605 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D88719E81915697400583605 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D88719EC1915697400583605 /* MinimalMessenger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MinimalMessenger-Info.plist"; sourceTree = "<group>"; };
+		D88719EE1915697400583605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D88719F01915697400583605 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D88719F21915697400583605 /* MinimalMessenger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MinimalMessenger-Prefix.pch"; sourceTree = "<group>"; };
+		D88719F31915697400583605 /* MGRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGRAppDelegate.h; sourceTree = "<group>"; };
+		D88719F41915697400583605 /* MGRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGRAppDelegate.m; sourceTree = "<group>"; };
+		D88719F71915697400583605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D88719FA1915697400583605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D88719FC1915697400583605 /* MGRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGRViewController.h; sourceTree = "<group>"; };
+		D88719FD1915697400583605 /* MGRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGRViewController.m; sourceTree = "<group>"; };
+		D88719FF1915697400583605 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8871A051915697400583605 /* MinimalMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8871A061915697400583605 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D8871A0E1915697400583605 /* MinimalMessengerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MinimalMessengerTests-Info.plist"; sourceTree = "<group>"; };
+		D8871A101915697400583605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8871A121915697400583605 /* MinimalMessengerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinimalMessengerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D88719DE1915697400583605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88719E71915697400583605 /* CoreGraphics.framework in Frameworks */,
+				D88719E91915697400583605 /* UIKit.framework in Frameworks */,
+				D88719E51915697400583605 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8871A021915697400583605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8871A071915697400583605 /* XCTest.framework in Frameworks */,
+				D8871A091915697400583605 /* UIKit.framework in Frameworks */,
+				D8871A081915697400583605 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D88719D81915697400583605 = {
+			isa = PBXGroup;
+			children = (
+				D88719EA1915697400583605 /* MinimalMessenger */,
+				D8871A0C1915697400583605 /* MinimalMessengerTests */,
+				D88719E31915697400583605 /* Frameworks */,
+				D88719E21915697400583605 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D88719E21915697400583605 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D88719E11915697400583605 /* MinimalMessenger.app */,
+				D8871A051915697400583605 /* MinimalMessengerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D88719E31915697400583605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D88719E41915697400583605 /* Foundation.framework */,
+				D88719E61915697400583605 /* CoreGraphics.framework */,
+				D88719E81915697400583605 /* UIKit.framework */,
+				D8871A061915697400583605 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D88719EA1915697400583605 /* MinimalMessenger */ = {
+			isa = PBXGroup;
+			children = (
+				D88719F31915697400583605 /* MGRAppDelegate.h */,
+				D88719F41915697400583605 /* MGRAppDelegate.m */,
+				D88719F61915697400583605 /* Main_iPhone.storyboard */,
+				D88719F91915697400583605 /* Main_iPad.storyboard */,
+				D88719FC1915697400583605 /* MGRViewController.h */,
+				D88719FD1915697400583605 /* MGRViewController.m */,
+				D88719FF1915697400583605 /* Images.xcassets */,
+				D88719EB1915697400583605 /* Supporting Files */,
+			);
+			path = MinimalMessenger;
+			sourceTree = "<group>";
+		};
+		D88719EB1915697400583605 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D88719EC1915697400583605 /* MinimalMessenger-Info.plist */,
+				D88719ED1915697400583605 /* InfoPlist.strings */,
+				D88719F01915697400583605 /* main.m */,
+				D88719F21915697400583605 /* MinimalMessenger-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8871A0C1915697400583605 /* MinimalMessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8871A121915697400583605 /* MinimalMessengerTests.m */,
+				D8871A0D1915697400583605 /* Supporting Files */,
+			);
+			path = MinimalMessengerTests;
+			sourceTree = "<group>";
+		};
+		D8871A0D1915697400583605 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8871A0E1915697400583605 /* MinimalMessengerTests-Info.plist */,
+				D8871A0F1915697400583605 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D88719E01915697400583605 /* MinimalMessenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8871A161915697400583605 /* Build configuration list for PBXNativeTarget "MinimalMessenger" */;
+			buildPhases = (
+				D88719DD1915697400583605 /* Sources */,
+				D88719DE1915697400583605 /* Frameworks */,
+				D88719DF1915697400583605 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinimalMessenger;
+			productName = MinimalMessenger;
+			productReference = D88719E11915697400583605 /* MinimalMessenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8871A041915697400583605 /* MinimalMessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8871A191915697400583605 /* Build configuration list for PBXNativeTarget "MinimalMessengerTests" */;
+			buildPhases = (
+				D8871A011915697400583605 /* Sources */,
+				D8871A021915697400583605 /* Frameworks */,
+				D8871A031915697400583605 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8871A0B1915697400583605 /* PBXTargetDependency */,
+			);
+			name = MinimalMessengerTests;
+			productName = MinimalMessengerTests;
+			productReference = D8871A051915697400583605 /* MinimalMessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D88719D91915697400583605 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MGR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Matt Rosemeier";
+				TargetAttributes = {
+					D8871A041915697400583605 = {
+						TestTargetID = D88719E01915697400583605;
+					};
+				};
+			};
+			buildConfigurationList = D88719DC1915697400583605 /* Build configuration list for PBXProject "MinimalMessenger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D88719D81915697400583605;
+			productRefGroup = D88719E21915697400583605 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D88719E01915697400583605 /* MinimalMessenger */,
+				D8871A041915697400583605 /* MinimalMessengerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D88719DF1915697400583605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88719FB1915697400583605 /* Main_iPad.storyboard in Resources */,
+				D8871A001915697400583605 /* Images.xcassets in Resources */,
+				D88719F81915697400583605 /* Main_iPhone.storyboard in Resources */,
+				D88719EF1915697400583605 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8871A031915697400583605 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8871A111915697400583605 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D88719DD1915697400583605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88719FE1915697400583605 /* MGRViewController.m in Sources */,
+				D88719F11915697400583605 /* main.m in Sources */,
+				D88719F51915697400583605 /* MGRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8871A011915697400583605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8871A131915697400583605 /* MinimalMessengerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8871A0B1915697400583605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D88719E01915697400583605 /* MinimalMessenger */;
+			targetProxy = D8871A0A1915697400583605 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D88719ED1915697400583605 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88719EE1915697400583605 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D88719F61915697400583605 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88719F71915697400583605 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D88719F91915697400583605 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D88719FA1915697400583605 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D8871A0F1915697400583605 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8871A101915697400583605 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8871A141915697400583605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8871A151915697400583605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8871A171915697400583605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MinimalMessenger/MinimalMessenger-Prefix.pch";
+				INFOPLIST_FILE = "MinimalMessenger/MinimalMessenger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8871A181915697400583605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MinimalMessenger/MinimalMessenger-Prefix.pch";
+				INFOPLIST_FILE = "MinimalMessenger/MinimalMessenger-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D8871A1A1915697400583605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MinimalMessenger.app/MinimalMessenger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MinimalMessenger/MinimalMessenger-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MinimalMessengerTests/MinimalMessengerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D8871A1B1915697400583605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MinimalMessenger.app/MinimalMessenger";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MinimalMessenger/MinimalMessenger-Prefix.pch";
+				INFOPLIST_FILE = "MinimalMessengerTests/MinimalMessengerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D88719DC1915697400583605 /* Build configuration list for PBXProject "MinimalMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8871A141915697400583605 /* Debug */,
+				D8871A151915697400583605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8871A161915697400583605 /* Build configuration list for PBXNativeTarget "MinimalMessenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8871A171915697400583605 /* Debug */,
+				D8871A181915697400583605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8871A191915697400583605 /* Build configuration list for PBXNativeTarget "MinimalMessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8871A1A1915697400583605 /* Debug */,
+				D8871A1B1915697400583605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D88719D91915697400583605 /* Project object */;
+}
