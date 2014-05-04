@@ -15,7 +15,6 @@
 		D88719F51915697400583605 /* MGRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D88719F41915697400583605 /* MGRAppDelegate.m */; };
 		D88719F81915697400583605 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88719F61915697400583605 /* Main_iPhone.storyboard */; };
 		D88719FB1915697400583605 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D88719F91915697400583605 /* Main_iPad.storyboard */; };
-		D88719FE1915697400583605 /* MGRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D88719FD1915697400583605 /* MGRViewController.m */; };
 		D8871A001915697400583605 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D88719FF1915697400583605 /* Images.xcassets */; };
 		D8871A071915697400583605 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8871A061915697400583605 /* XCTest.framework */; };
 		D8871A081915697400583605 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88719E41915697400583605 /* Foundation.framework */; };
@@ -23,6 +22,10 @@
 		D8871A111915697400583605 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8871A0F1915697400583605 /* InfoPlist.strings */; };
 		D8871A131915697400583605 /* MinimalMessengerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8871A121915697400583605 /* MinimalMessengerTests.m */; };
 		D8871A1E19156A3A00583605 /* MGRCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8871A1D19156A3A00583605 /* MGRCoreData.m */; };
+		D8871A231915C0B000583605 /* MGRMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8871A221915C0B000583605 /* MGRMessagesViewController.m */; };
+		D8871A261915C1F000583605 /* MGRMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8871A251915C1F000583605 /* MGRMessageCell.m */; };
+		D8871A2A1915E9C800583605 /* MinimalMessenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8871A281915E9C800583605 /* MinimalMessenger.xcdatamodeld */; };
+		D8871A2E1915EB6000583605 /* MGRMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D8871A2D1915EB6000583605 /* MGRMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,20 +47,25 @@
 		D88719EE1915697400583605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D88719F01915697400583605 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D88719F21915697400583605 /* MinimalMessenger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MinimalMessenger-Prefix.pch"; sourceTree = "<group>"; };
-		D88719F31915697400583605 /* MGRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGRAppDelegate.h; sourceTree = "<group>"; };
-		D88719F41915697400583605 /* MGRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGRAppDelegate.m; sourceTree = "<group>"; };
+		D88719F31915697400583605 /* MGRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MGRAppDelegate.h; path = MinimalMessenger/MGRAppDelegate.h; sourceTree = "<group>"; };
+		D88719F41915697400583605 /* MGRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MGRAppDelegate.m; path = MinimalMessenger/MGRAppDelegate.m; sourceTree = "<group>"; };
 		D88719F71915697400583605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		D88719FA1915697400583605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		D88719FC1915697400583605 /* MGRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGRViewController.h; sourceTree = "<group>"; };
-		D88719FD1915697400583605 /* MGRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGRViewController.m; sourceTree = "<group>"; };
 		D88719FF1915697400583605 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8871A051915697400583605 /* MinimalMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8871A061915697400583605 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D8871A0E1915697400583605 /* MinimalMessengerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MinimalMessengerTests-Info.plist"; sourceTree = "<group>"; };
 		D8871A101915697400583605 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8871A121915697400583605 /* MinimalMessengerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinimalMessengerTests.m; sourceTree = "<group>"; };
-		D8871A1C19156A3A00583605 /* MGRCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRCoreData.h; sourceTree = "<group>"; };
-		D8871A1D19156A3A00583605 /* MGRCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRCoreData.m; sourceTree = "<group>"; };
+		D8871A1C19156A3A00583605 /* MGRCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGRCoreData.h; path = ../MGRCoreData.h; sourceTree = "<group>"; };
+		D8871A1D19156A3A00583605 /* MGRCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGRCoreData.m; path = ../MGRCoreData.m; sourceTree = "<group>"; };
+		D8871A211915C0B000583605 /* MGRMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRMessagesViewController.h; sourceTree = "<group>"; };
+		D8871A221915C0B000583605 /* MGRMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRMessagesViewController.m; sourceTree = "<group>"; };
+		D8871A241915C1F000583605 /* MGRMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRMessageCell.h; sourceTree = "<group>"; };
+		D8871A251915C1F000583605 /* MGRMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRMessageCell.m; sourceTree = "<group>"; };
+		D8871A291915E9C800583605 /* MinimalMessenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MinimalMessenger.xcdatamodel; sourceTree = "<group>"; };
+		D8871A2C1915EB6000583605 /* MGRMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRMessage.h; sourceTree = "<group>"; };
+		D8871A2D1915EB6000583605 /* MGRMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +95,8 @@
 		D88719D81915697400583605 = {
 			isa = PBXGroup;
 			children = (
-				D8871A1C19156A3A00583605 /* MGRCoreData.h */,
-				D8871A1D19156A3A00583605 /* MGRCoreData.m */,
+				D88719F31915697400583605 /* MGRAppDelegate.h */,
+				D88719F41915697400583605 /* MGRAppDelegate.m */,
 				D88719EA1915697400583605 /* MinimalMessenger */,
 				D8871A0C1915697400583605 /* MinimalMessengerTests */,
 				D88719E31915697400583605 /* Frameworks */,
@@ -119,12 +127,9 @@
 		D88719EA1915697400583605 /* MinimalMessenger */ = {
 			isa = PBXGroup;
 			children = (
-				D88719F31915697400583605 /* MGRAppDelegate.h */,
-				D88719F41915697400583605 /* MGRAppDelegate.m */,
-				D88719F61915697400583605 /* Main_iPhone.storyboard */,
-				D88719F91915697400583605 /* Main_iPad.storyboard */,
-				D88719FC1915697400583605 /* MGRViewController.h */,
-				D88719FD1915697400583605 /* MGRViewController.m */,
+				D8871A271915E9A100583605 /* Core Data */,
+				D8871A201915C04A00583605 /* UI */,
+				D8871A1F1915C04200583605 /* View Controllers */,
 				D88719FF1915697400583605 /* Images.xcassets */,
 				D88719EB1915697400583605 /* Supporting Files */,
 			);
@@ -158,6 +163,46 @@
 				D8871A0F1915697400583605 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8871A1F1915C04200583605 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8871A211915C0B000583605 /* MGRMessagesViewController.h */,
+				D8871A221915C0B000583605 /* MGRMessagesViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D8871A201915C04A00583605 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D88719F61915697400583605 /* Main_iPhone.storyboard */,
+				D88719F91915697400583605 /* Main_iPad.storyboard */,
+				D8871A241915C1F000583605 /* MGRMessageCell.h */,
+				D8871A251915C1F000583605 /* MGRMessageCell.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D8871A271915E9A100583605 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D8871A2B1915EB2200583605 /* Managed Objects */,
+				D8871A1C19156A3A00583605 /* MGRCoreData.h */,
+				D8871A1D19156A3A00583605 /* MGRCoreData.m */,
+				D8871A281915E9C800583605 /* MinimalMessenger.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		D8871A2B1915EB2200583605 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D8871A2C1915EB6000583605 /* MGRMessage.h */,
+				D8871A2D1915EB6000583605 /* MGRMessage.m */,
+			);
+			name = "Managed Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D88719FE1915697400583605 /* MGRViewController.m in Sources */,
 				D8871A1E19156A3A00583605 /* MGRCoreData.m in Sources */,
+				D8871A2E1915EB6000583605 /* MGRMessage.m in Sources */,
+				D8871A261915C1F000583605 /* MGRMessageCell.m in Sources */,
 				D88719F11915697400583605 /* main.m in Sources */,
+				D8871A2A1915E9C800583605 /* MinimalMessenger.xcdatamodeld in Sources */,
 				D88719F51915697400583605 /* MGRAppDelegate.m in Sources */,
+				D8871A231915C0B000583605 /* MGRMessagesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +535,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8871A281915E9C800583605 /* MinimalMessenger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8871A291915E9C800583605 /* MinimalMessenger.xcdatamodel */,
+			);
+			currentVersion = D8871A291915E9C800583605 /* MinimalMessenger.xcdatamodel */;
+			path = MinimalMessenger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D88719D91915697400583605 /* Project object */;
 }

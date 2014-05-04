@@ -1,13 +1,19 @@
 //
-//  MGRViewController.h
+//  MGRMessage.m
 //  MinimalMessenger
 //
 //  Created by Matt Rosemeier on 5/3/14.
 //  Copyright (c) 2014 Matt Rosemeier. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MGRMessage.h"
 
-@interface MGRViewController : UIViewController
+
+@implementation MGRMessage
+
+@dynamic message;
+@dynamic type;
+@dynamic height;
+@dynamic date;
 
 @end
