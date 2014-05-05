@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, MessageCellType) {
-    MGRMessageTypeSent = 0,
-    MGRMessageTypeReceived
-};
+
 
 @interface MGRMessageCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIView *receivedVerticalLineView;

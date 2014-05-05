@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+typedef NS_ENUM(NSInteger, MGRMessageType) {
+    MGRMessageTypeSent = 0,
+    MGRMessageTypeReceived
+};
 
 @interface MGRMessage : NSManagedObject
 
