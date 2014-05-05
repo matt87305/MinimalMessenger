@@ -175,12 +175,12 @@
     CGRect rect = [userInfoDict[UIKeyboardFrameEndUserInfoKey] CGRectValue];
 
 
-    NSInteger padding = 10;
+    NSInteger padding = 0;
     [UIView animateWithDuration:0.25f animations:^{
         [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, rect.size.height+padding, 0)];
     }];
     
-    
+    [self scrollTableToBottom:self.tableView animated:YES];
 }
 
 - (void)keyboardDidHide {
@@ -227,8 +227,11 @@
 
 
 
-- (void)scrollTableToBottom:(UITableView *)table animated:(BOOL)animated {
-    [table scrollRectToVisible:CGRectMake(0, table.contentSize.height, 50, 50) animated:animated];
+- (void)scrollTableToBottom:(UITableView *)tableView animated:(BOOL)animated {
+    NSInteger numberOfRows = [tableView numberOfRowsInSection:0];
+    if (numberOfRows) {
+        [tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:numberOfRows-1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:animated];
+    }
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
